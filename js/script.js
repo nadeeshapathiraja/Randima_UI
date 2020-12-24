@@ -25,7 +25,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		if(x < max_fields){ //max input box allowed
 			x++; //text box increment
-			$(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+			$(wrapper).append('<div class="row"><div class="col-md-6"><div class="form-group row"><label for="name" class="col-sm-3 col-form-label"></label><div class="col-sm-9"><input type="text" class="form-control" name="email[]" placeholder="email@example.com" id="email[]"></div></div></div><div class="col-md-6"><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="primary" id="primary" value="Primary"><label class="form-check-label" for="inlineRadio1">Primary</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="opted_out" name="opted_out" value="opted_out"><label class="form-check-label" for="inlineCheckbox2">Opted Out</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="invalid" name="invalid" value="invalid"><label class="form-check-label" for="inlineCheckbox3">Invalid</label></div></div><a href="#" class="remove_field btn btn-danger">-</a></div > ');  
 		}
 	});
 	
@@ -33,3 +33,4 @@ $(document).ready(function() {
 		e.preventDefault(); $(this).parent('div').remove(); x--;
 	})
 });
+

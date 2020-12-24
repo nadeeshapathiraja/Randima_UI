@@ -41,6 +41,8 @@
                                 <button class="add_field_button">+</button>
                             </div>
                         </div>
+
+                        <!-- Repeted Row -->
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group row">
@@ -69,6 +71,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- End Repeted Row -->
 
                     </div>
                 </div>
